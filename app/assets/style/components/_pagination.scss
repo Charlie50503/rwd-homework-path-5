@@ -1,0 +1,46 @@
+.my-pagination {
+   font-size: 16px;
+   line-height: 24;
+
+   &-prev {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      border: 1px solid #2a8356;
+      border-radius: 2px 0 0 2px;
+      color: #2a8356;
+
+      &:hover {
+         border: 1px solid #2a8356;
+         background: #2a8356;
+         color: #fff;
+      }
+   }
+
+   &-next {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+      border: 1px solid #2a8356;
+      border-radius: 0 2px 2px 0;
+      color: #2a8356;
+
+      &:hover {
+         border: 1px solid #2a8356;
+         background: #2a8356;
+         color: #fff;
+      }
+   }
+
+   &-num {
+      padding: 6px 11px;
+      border: 1px solid #2a8356;
+      color: #2a8356;
+
+      &:hover {
+         border: 1px solid #2a8356;
+         background: #2a8356;
+         color: #fff;
+      }
+   }
+}
