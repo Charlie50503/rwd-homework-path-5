@@ -1,10 +1,129 @@
----
-title: 首頁
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>首頁</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style/all.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <section class="sidebar">
+      <img
+        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg"
+        alt="" class="logo">
+      <ul class="menu">
+        <li class="menu-item">
+          <a href="" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              insert_chart
+            </span>
+            <p class="menu-item__text">Dashboard</p>
+          </a>
+        </li>
+        <li class="menu-item menu-item--hover">
+          <a href="" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              question_answer
+            </span>
+            <p class="menu-item__text">Question</p>
+          </a>
+        </li>
+        <li class="menu-item menu-item--hover">
+          <a href="./index.html" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              assignment
+            </span>
+            <p class="menu-item__text">Assignment</p>
+          </a>
+        </li>
+        <li class="menu-item menu-item--hover">
+          <a href="" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              video_library
+            </span>
+            <p class="menu-item__text">Course</p>
+          </a>
+        </li>
+        <li class="menu-item menu-item--hover">
+          <a href="./admin.html" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              supervisor_account
+            </span>
+            <p class="menu-item__text">Admin</p>
+          </a>
+        </li>
+        <li class="menu-item menu-item--hover">
+          <a href="" class="menu-item__btn menu-item__btn--hover">
+            <span class="material-icons menu-item__icon">
+              settings
+            </span>
+            <p class="menu-item__text">Settings</p>
+          </a>
+        </li>
+      </ul>
+      <div class="user-info">
+        <img src="https://gn00678465.github.io/HTML-layout/week5/final/assets/images/andychen.jpeg" alt=""
+          class="user-info__photo">
+        <div class="user-info-content">
+          <p class="user-info-content__title">Andy Chen</p>
+          <p class="user-info-content__subtitle">andy0401@mail.com</p>
+        </div>
+      </div>
+    </section>
+    <main>
+      <nav class="nav">
+        <h1 class="nav-title">Assignment</h1>
+        <button type="button" class="nav-add-btn add-btn my-btn-none" data-toggle="modal" data-target="#editModal">
+          <span class="material-icons add-btn-icon">
+            add
+          </span>
+          <span class="add-btn-text">
+            Add New Admin
+          </span>
+        </button>
+        <div class="my-dropdown nav-dropdown">
+          <div class="my-dropdown__title">All Courses</div>
+          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <span class="material-icons">
+              keyboard_arrow_down
+            </span>
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </div>
+        <div class="nav-search">
+          <span class="material-icons">
+            search
+          </span>
+        </div>
+        <div class="nav-alam">
+          <span class="material-icons">
+            notifications_active
+          </span>
+        </div>
+      </nav>
+
+      
 <section class="admin">
     <table class="table table-hover my-table admin-table">
         <thead class="my-table__thead">
@@ -290,3 +409,129 @@ current: index
         </div>
     </div>
 </div>
+
+    </main>
+  </div>
+  <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="editModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header modal-form__header">
+          <h5 class="modal-title  edit-modal-title" id="editModalLabel">New Admin</h5>
+          <button type="button" class="close edit-modal-close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+              <span class="material-icons">
+                clear
+              </span>
+            </span>
+          </button>
+        </div>
+        <div class="modal-body modal-form__body">
+          <ul class="edit-modal-form">
+            <li>
+              <h2 class="edit-modal-subtitle">Account</h2>
+              <div class="form-group">
+                <label for="editInputName" class="edit-modal-input-label">Name</label>
+                <input type="text" class="form-control input-primary" id="editInputName" aria-describedby="emailHelp"
+                  placeholder="Name">
+              </div>
+              <div class="form-group mb-0">
+                <label for="editInputEmail" class="edit-modal-input-label">Email</label>
+                <input type="email" class="form-control input-primary" id="editInputEmail" placeholder="Email">
+              </div>
+              <hr class="edit-modal-bottom-line">
+            </li>
+            <li>
+              <h2 class="edit-modal-subtitle">Verification</h2>
+              <div class="verified">
+                <span class="material-icons verified__icon">
+                  check_circle
+                </span>
+                <p class="verified__text">Verified</p>
+              </div>
+              <button type="button" class="btn verified__btn">
+                Send Verification Mail
+              </button>
+              <hr class="edit-modal-bottom-line">
+            </li>
+            <li>
+              <h2 class="edit-modal-subtitle">Access Level</h2>
+              <select name="" id="" value="admin" class="access-options">
+                <option value="admin">Admin</option>
+                <option value="admin">Viewer</option>
+              </select>
+              <hr class="edit-modal-bottom-line">
+            </li>
+            <li>
+              <h2 class="edit-modal-subtitle">Custom Access</h2>
+              <ul class="custom-access-list">
+                <li>
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Lecture
+                  </label>
+                </li>
+                <li>
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Coupon
+                  </label>
+                </li>
+                <li>
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Message
+                  </label>
+                </li>
+                <li>
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Setting
+                  </label>
+                </li>
+                <li>
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Task Menu
+                  </label>
+                </li>
+              </ul>
+              <hr class="edit-modal-bottom-line">
+            </li>
+            <li>
+              <h2 class="edit-modal-subtitle">Deactivate Account</h2>
+              <div class="warning">
+                <span class="material-icons warning-icon">
+                  report_problem
+                </span>
+                <span class="warning-text">
+                  This cannot be undone!
+                </span>
+              </div>
+              <button type="button" class="btn my-bg-btn my-btn-none deactivate-account-btn">
+                Deactivate This Account
+              </button>
+            </li>
+          </ul>
+        </div>
+        <div class="modal-footer modal-form__footer">
+          <button type="button" class="btn my-btn-outline-primary edit-modal__footer-btn"
+            data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn my-btn-primary edit-modal__footer-btn">Update</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
