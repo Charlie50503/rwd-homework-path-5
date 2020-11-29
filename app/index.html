@@ -1,0 +1,205 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<div class="assignment">
+  <section class="assignment-header">
+    <div class="my-dropdown">
+      <div class="my-dropdown__title">All (4)</div>
+      <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false">
+        <span class="material-icons">
+          keyboard_arrow_down
+        </span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+    <p class="assignment-comments">
+      2 comments
+    </p>
+  </section>
+  <section class="assignment-content">
+    <div class="list-group assignment-tasks">
+      <a href="#" class="list-group-item list-group-item-action active assignment-tasks-item">
+        <div class="assignment-tasks-item__header">
+          <p class="assignment-tasks-item__header-chapter">
+            Chapter Assignment 2
+          </p>
+          <p class="assignment-tasks-item__header-time">
+            4 hrs ago
+          </p>
+        </div>
+        <div class="assignment-tasks-item__content">
+          <p class="assignment-tasks-item__content-text">
+            Please check this file…
+          </p>
+          <p class="assignment-tasks-item__content-name">
+            Emily Wang
+          </p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action assignment-tasks-item">
+        <div class="assignment-tasks-item__header">
+          <p class="assignment-tasks-item__header-chapter">
+            Chapter Assignment 1
+          </p>
+          <p class="assignment-tasks-item__header-time">
+            12 hrs ago
+          </p>
+        </div>
+        <div class="assignment-tasks-item__content">
+          <p class="assignment-tasks-item__content-text">
+            My Homework
+          </p>
+          <p class="assignment-tasks-item__content-name">
+            David Xu
+          </p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action assignment-tasks-item">
+        <div class="assignment-tasks-item__header">
+          <p class="assignment-tasks-item__header-chapter">
+            Final Assignment
+          </p>
+          <p class="assignment-tasks-item__header-time">
+            18 hrs ago
+          </p>
+        </div>
+        <div class="assignment-tasks-item__content">
+          <p class="assignment-tasks-item__content-text">
+            Have a problem with this…
+          </p>
+          <p class="assignment-tasks-item__content-name">
+            Tony Wei
+          </p>
+        </div>
+      </a>
+      <a href="#" class="list-group-item list-group-item-action assignment-tasks-item">
+        <div class="assignment-tasks-item__header">
+          <p class="assignment-tasks-item__header-chapter">
+            Final Assignment
+          </p>
+          <p class="assignment-tasks-item__header-time">
+            19 hrs ago
+          </p>
+        </div>
+        <div class="assignment-tasks-item__content">
+          <p class="assignment-tasks-item__content-text">
+            Did I do it right?
+          </p>
+          <p class="assignment-tasks-item__content-name">
+            Christina Lin
+          </p>
+        </div>
+      </a>
+    </div>
+    <div class="assignment-task">
+      <div class="assignment-task__header">
+        <div class="assignment-task__header-text">
+          <p class="assignment-task__header-chapter">Chapter Assignment 2 / HTML&CSS</p>
+          <p class="assignment-task__header-title">Please check this file for me, thanks!</p>
+        </div>
+        <button type="button" class="assignment-task__header-btn">
+          <span class="material-icons">
+            more_vert
+          </span>
+        </button>
+      </div>
+      <ul class="assignment-task__feedback">
+        <li>
+          <div class="user-info">
+            <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emilywang.jpeg?raw=true"
+              alt="" class="user-info__photo">
+            <div class="user-info-content">
+              <p class="user-info-content__title">Emily Wang</p>
+              <p class="user-info-content__subtitle">10:38 AM (4 hours ago)</p>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="feedback-text">
+              Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following
+              code the height of the <code>div</code> is bigger than the height of the <code>img</code> ? There is a gap
+              below the
+              image, but it
+              doesn’t seems to be a padding/margin. What is the gap or extra space below image?
+            </p>
+            <br>
+            <a class="feedback-link" href="#" download="">
+              <span class="material-icons feedback-link__icon">
+                attach_file
+              </span>
+              <p class="feedback-link__text">HW-2-David.zip</p>
+            </a>
+            <hr class="feedback-bottom-line">
+          </div>
+        </li>
+        <li>
+          <div class="editor">
+            <span class="material-icons star-icon">
+              star_border
+            </span>
+            <span class="material-icons pen-icon">
+              create
+            </span>
+
+          </div>
+          <div class="user-info">
+            <img src="https://gn00678465.github.io/HTML-layout/week5/final/assets/images/andychen.jpeg" alt=""
+              class="user-info__photo">
+            <div class="user-info-content">
+              <p class="user-info-content__title">Andy Chen (You)</p>
+              <p class="user-info-content__subtitle">13:24 AM (1 hours ago)</p>
+            </div>
+          </div>
+          <div class="feedback">
+            <p class="feedback-text">
+              Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c
+              and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q.
+              <br>
+              <br>
+              You can:
+              <br>
+              <br>
+            <ul class="feedback-list">
+              <li class="feedback-list__item">
+                <p>
+                  adjust the <code>vertical-align</code> of the image to position it elsewhere (e.g. the
+                  <code>middle</code> ) or 　
+                </p>
+              </li>
+              <li class="feedback-list__item">
+                <p>change the <code>display</code> so it isn’t inline.</p>
+              </li>
+            </ul>
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="assignment-task__footer">
+        <div class="change-page">
+          <a href="#" class="left">
+            <span class="material-icons ">
+              chevron_left
+            </span>
+          </a>
+          <a href="" class="right">
+            <span class="material-icons right">
+              chevron_right
+            </span>
+          </a>
+        </div>
+        <div class="assignment-task__footer-btns">
+          <button class="btn my-btn-outline-primary read">Mark as read</button>
+          <button class="btn my-btn-primary reply">Reply</button>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>

@@ -1,0 +1,292 @@
+---
+title: 首頁
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<section class="admin">
+    <table class="table table-hover my-table admin-table">
+        <thead class="my-table__thead">
+            <tr>
+                <th scope="col">
+                    <div class="sort-th">
+                        <span class="sort-th-title">ID</span>
+                        <span class="material-icons sort-th-icon">
+                            arrow_downward
+                        </span>
+                    </div>
+                </th>
+                <th scope="col">Name</th>
+                <th scope="col">Email</th>
+                <th scope="col">Verified</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>#1</td>
+                <td>Emir Wicks</td>
+                <td>emir.wicks@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#2</td>
+                <td>Zaina Goldsmith</td>
+                <td>zaina.goldsmith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#3</td>
+                <td>Mahima Lopez</td>
+                <td>Mahima.Lopez@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#4</td>
+                <td>Pharrell Murray</td>
+                <td>Pharrell.Murray@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#5</td>
+                <td>Annika Mcbride</td>
+                <td>Annika.Mcbride@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#6</td>
+                <td>Fatimah Clark</td>
+                <td>Fatimah.Clark@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#7</td>
+                <td>Klaudia Rhodes</td>
+                <td>Klaudia.Rhodes@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#8</td>
+                <td>Tillie Lucero</td>
+                <td>Tillie.Lucero@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#9</td>
+                <td>Sabrina Stephenson</td>
+                <td>Sabrina.Stephenson@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>#10</td>
+                <td>Annie Smith</td>
+                <td>Annie.Smith@mail.com</td>
+                <td>Yes</td>
+                <td>
+                    <div class="edit">
+                        <button type="button" class="my-btn-none edit-eye" data-toggle="modal"
+                            data-target="#editorProfileModal">
+                            <span class="material-icons">
+                                remove_red_eye
+                            </span>
+                        </button>
+                        <button type="button" class="my-btn-none edit-pen" data-toggle="modal" data-target="#editModal">
+                            <span class="material-icons">
+                                edit
+                            </span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<div class="modal fade" id="editorProfileModal" tabindex="-1" role="dialog" aria-labelledby="editorProfileModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="card-rectangle">
+                <img src="https://github.com/hexschool/webLayoutTraining1st/blob/master/week5/emir.jpeg?raw=true" alt=""
+                    class="card-rectangle-photo">
+                <div class="card-rectangle-container">
+                    <div class="card-rectangle__header">
+                        <p class="view-num">#1</p>
+                        <button type="button" class="close card-rectangle-close" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">
+                                <span class="material-icons">
+                                    clear
+                                </span>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="card-rectangle__content">
+                        <h3 class="view-author">
+                            Admin
+                        </h3>
+                        <h1 class="view-name">
+                            Emir Wicks
+                        </h1>
+                        <p class="view-mail">
+                            emir.wicks@mail.com
+                        </p>
+                    </div>
+                    <div class="card-rectangle__footer">
+                        <div class="tag">Verified</div>
+                        <button class="btn my-btn-none" type="button" data-toggle="collapse"
+                            data-target="#editorCollapse" aria-expanded="false" aria-controls="editorCollapse">
+                            <span class="material-icons">
+                                keyboard_arrow_down
+                            </span>
+                        </button>
+                    </div>
+                    <div class="view-collapse-content" id="editorCollapse">
+                        <button class="btn my-btn-outline-secondary deactivate-btn" type="button">
+                            Deactivate
+                        </button>
+                        <button class="btn my-btn-primary edit-btn" type="button">
+                            Edit
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

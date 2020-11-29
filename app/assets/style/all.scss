@@ -1,0 +1,55 @@
+@import './variables';
+
+@import './components/sidebar';
+
+@import './components/logo';
+
+@import './components/nav';
+
+@import './components/feedback';
+
+@import './components/dropdown';
+
+@import './components/change-page';
+
+@import './components/btn';
+
+@import './components/input';
+
+@import './components/table';
+
+@import './components/card';
+
+@import './components/tag';
+
+@import './components/modal';
+
+// @import './components/user';
+
+@import './layout/layout';
+
+@import './pages/assignment';
+
+@import './pages/admin';
+
+body {
+   color: map-get($color, dark);
+   font-size: 16px;
+   font-family: 'Lato';
+}
+
+img {
+   display: block;
+   max-width: 100%;
+   height: auto;
+}
+
+p {
+   margin: 0;
+}
+
+code {
+   padding: 0 4px;
+   background-color: map-get($color, light);
+   color: map-get($color, primary);
+}

@@ -1,0 +1,51 @@
+@import './user';
+
+.sidebar {
+   position: relative;
+   padding: 32px;
+   width: 296px;
+   height: 100vh;
+   background-color: map-get($color, light);
+   font-weight: bold;
+   font-size: 16px;
+   font-family: 'Lato';
+   line-height: 24px;
+
+   .logo {
+      margin-bottom: 32px;
+   }
+
+   .user-info {
+      @include user {
+         position: absolute;
+         bottom: 32px;
+      }
+   }
+}
+
+.menu {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+
+   &-item {
+      margin-bottom: 26px;
+
+      &__btn {
+         display: flex;
+         color: map-get($color, dark);
+         text-decoration: none;
+
+         &--hover:hover {
+            color: map-get($color, primary);
+            text-decoration: none;
+         }
+      }
+
+      &__icon {
+         margin-right: 16px;
+         padding: 0;
+         font-size: 24px;
+      }
+   }
+}
