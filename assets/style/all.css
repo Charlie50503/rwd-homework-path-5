@@ -516,93 +516,90 @@ main {
   display: -ms-flexbox;
   display: flex; }
 
-.assignment .assignment-task__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 12px 16px;
-  border: 1px solid #cdddcd;
-  border-radius: 2px 2px 0 0;
-  background-color: #edf4ee; }
-  .assignment .assignment-task__header-chapter {
-    font-size: 12px;
-    line-height: 24px; }
-  .assignment .assignment-task__header-title {
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 24px; }
-  .assignment .assignment-task__header-btn {
+.assignment .assignment-task {
+  min-width: 680px; }
+  .assignment .assignment-task__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 12px 16px;
+    border: 1px solid #cdddcd;
+    border-radius: 2px 2px 0 0;
+    background-color: #edf4ee; }
+    .assignment .assignment-task__header-chapter {
+      font-size: 12px;
+      line-height: 24px; }
+    .assignment .assignment-task__header-title {
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 24px; }
+    .assignment .assignment-task__header-btn {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      padding: 0;
+      border: none;
+      background-color: unset; }
+  .assignment .assignment-task__feedback {
+    position: relative;
+    margin: 0;
+    margin-bottom: 16px;
+    padding: 16px;
+    border-right: 1px solid #cdddcd;
+    border-bottom: 1px solid #cdddcd;
+    border-left: 1px solid #cdddcd;
+    border-radius: 0 2px;
+    list-style: none; }
+  .assignment .assignment-task .user-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .assignment .assignment-task .user-info__photo {
+      margin-right: 16px;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+    .assignment .assignment-task .user-info-content__subtitle {
+      color: #09a;
+      font-size: 14px;
+      font-family: 'Lato Regular 400'; }
+    .assignment .assignment-task .user-info__photo {
+      margin-right: 8px; }
+    .assignment .assignment-task .user-info-content__subtitle {
+      font-size: 12px; }
+  .assignment .assignment-task .feedback {
+    padding-left: 48px; }
+  .assignment .assignment-task .editor {
+    position: absolute;
+    right: 32px; }
+    .assignment .assignment-task .editor .star-icon {
+      margin-right: 24px;
+      cursor: pointer; }
+    .assignment .assignment-task .editor .pen-icon {
+      cursor: pointer; }
+  .assignment .assignment-task__footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0;
-    border: none;
-    background-color: unset; }
-
-.assignment .assignment-task__feedback {
-  position: relative;
-  margin: 0;
-  margin-bottom: 16px;
-  padding: 16px;
-  border-right: 1px solid #cdddcd;
-  border-bottom: 1px solid #cdddcd;
-  border-left: 1px solid #cdddcd;
-  border-radius: 0 2px;
-  list-style: none; }
-
-.assignment .assignment-task .user-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
-  .assignment .assignment-task .user-info__photo {
-    margin-right: 16px;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    -o-object-fit: cover;
-       object-fit: cover; }
-  .assignment .assignment-task .user-info-content__subtitle {
-    color: #09a;
-    font-size: 14px;
-    font-family: 'Lato Regular 400'; }
-  .assignment .assignment-task .user-info__photo {
-    margin-right: 8px; }
-  .assignment .assignment-task .user-info-content__subtitle {
-    font-size: 12px; }
-
-.assignment .assignment-task .feedback {
-  padding-left: 48px; }
-
-.assignment .assignment-task .editor {
-  position: absolute;
-  right: 32px; }
-  .assignment .assignment-task .editor .star-icon {
-    margin-right: 24px;
-    cursor: pointer; }
-  .assignment .assignment-task .editor .pen-icon {
-    cursor: pointer; }
-
-.assignment .assignment-task__footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .assignment .assignment-task__footer-btns .read {
-    margin-right: 16px; }
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .assignment .assignment-task__footer-btns .read {
+      margin-right: 16px; }
 
 .edit {
   display: -webkit-box;
