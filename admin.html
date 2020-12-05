@@ -23,10 +23,10 @@
 
 <body>
   <div class="wrap">
-    <section class="sidebar">
-      <img
-        src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg"
-        alt="" class="logo">
+    <nav class="sidebar">
+      <h1 class="logo">
+        ANSWER
+      </h1>
       <ul class="menu">
         <li class="menu-item">
           <a href="" class="menu-item__btn menu-item__btn--hover">
@@ -85,9 +85,9 @@
           <p class="user-info-content__subtitle">andy0401@mail.com</p>
         </div>
       </div>
-    </section>
+    </nav>
     <main>
-      <nav class="nav">
+      <header class="nav">
         <h1 class="nav-title">Assignment</h1>
         <button type="button" class="nav-add-btn add-btn my-btn-none" data-toggle="modal" data-target="#editModal">
           <span class="material-icons add-btn-icon">
@@ -98,9 +98,9 @@
           </span>
         </button>
         <div class="my-dropdown nav-dropdown">
-          <div class="my-dropdown__title">All Courses</div>
           <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
+            <p class="my-dropdown__title">All Courses</p>
             <span class="material-icons">
               keyboard_arrow_down
             </span>
@@ -111,17 +111,25 @@
             <a class="dropdown-item" href="#">Something else here</a>
           </div>
         </div>
-        <div class="nav-search">
-          <span class="material-icons">
-            search
-          </span>
-        </div>
-        <div class="nav-alam">
-          <span class="material-icons">
-            notifications_active
-          </span>
-        </div>
-      </nav>
+        <ul class="nav-links">
+          <li>
+            <div class="nav-search">
+              <span class="material-icons">
+                search
+              </span>
+            </div>
+          </li>
+          <li>
+            <div class="nav-alam">
+              <span class="material-icons">
+                notifications_active
+              </span>
+            </div>
+          </li>
+        </ul>
+
+
+      </header>
 
       
 <section class="admin">
@@ -438,7 +446,7 @@
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header modal-form__header">
-          <h5 class="modal-title  edit-modal-title" id="editModalLabel">New Admin</h5>
+          <h2 class="modal-title  edit-modal-title" id="editModalLabel">New Admin</h2>
           <button type="button" class="close edit-modal-close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">
               <span class="material-icons">
@@ -448,92 +456,94 @@
           </button>
         </div>
         <div class="modal-body modal-form__body">
-          <ul class="edit-modal-form">
-            <li>
-              <h2 class="edit-modal-subtitle">Account</h2>
-              <div class="form-group">
-                <label for="editInputName" class="edit-modal-input-label">Name</label>
-                <input type="text" class="form-control input-primary" id="editInputName" aria-describedby="emailHelp"
-                  placeholder="Name">
-              </div>
-              <div class="form-group mb-0">
-                <label for="editInputEmail" class="edit-modal-input-label">Email</label>
-                <input type="email" class="form-control input-primary" id="editInputEmail" placeholder="Email">
-              </div>
-              <hr class="edit-modal-bottom-line">
-            </li>
-            <li>
-              <h2 class="edit-modal-subtitle">Verification</h2>
-              <div class="verified">
-                <span class="material-icons verified__icon">
-                  check_circle
-                </span>
-                <p class="verified__text">Verified</p>
-              </div>
-              <button type="button" class="btn verified__btn">
-                Send Verification Mail
-              </button>
-              <hr class="edit-modal-bottom-line">
-            </li>
-            <li>
-              <h2 class="edit-modal-subtitle">Access Level</h2>
-              <select name="" id="" value="admin" class="access-options">
-                <option value="admin">Admin</option>
-                <option value="admin">Viewer</option>
-              </select>
-              <hr class="edit-modal-bottom-line">
-            </li>
-            <li>
-              <h2 class="edit-modal-subtitle">Custom Access</h2>
-              <ul class="custom-access-list">
-                <li>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Lecture
-                  </label>
-                </li>
-                <li>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Coupon
-                  </label>
-                </li>
-                <li>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Message
-                  </label>
-                </li>
-                <li>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Setting
-                  </label>
-                </li>
-                <li>
-                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                  <label class="form-check-label" for="defaultCheck1">
-                    Task Menu
-                  </label>
-                </li>
-              </ul>
-              <hr class="edit-modal-bottom-line">
-            </li>
-            <li>
-              <h2 class="edit-modal-subtitle">Deactivate Account</h2>
-              <div class="warning">
-                <span class="material-icons warning-icon">
-                  report_problem
-                </span>
-                <span class="warning-text">
-                  This cannot be undone!
-                </span>
-              </div>
-              <button type="button" class="btn my-bg-btn my-btn-none deactivate-account-btn">
-                Deactivate This Account
-              </button>
-            </li>
-          </ul>
+          <form action="">
+            <ul class="edit-modal-form">
+              <li>
+                <h2 class="edit-modal-subtitle">Account</h2>
+                <div class="form-group">
+                  <label for="editInputName" class="edit-modal-input-label">Name</label>
+                  <input type="text" class="form-control input-primary" id="editInputName" aria-describedby="emailHelp"
+                    placeholder="Name">
+                </div>
+                <div class="form-group mb-0">
+                  <label for="editInputEmail" class="edit-modal-input-label">Email</label>
+                  <input type="email" class="form-control input-primary" id="editInputEmail" placeholder="Email">
+                </div>
+                <hr class="edit-modal-bottom-line">
+              </li>
+              <li>
+                <h3 class="edit-modal-subtitle">Verification</h3>
+                <div class="verified">
+                  <span class="material-icons verified__icon">
+                    check_circle
+                  </span>
+                  <p class="verified__text">Verified</p>
+                </div>
+                <button type="button" class="btn verified__btn">
+                  Send Verification Mail
+                </button>
+                <hr class="edit-modal-bottom-line">
+              </li>
+              <li>
+                <h3 class="edit-modal-subtitle">Access Level</h3>
+                <select name="" id="" value="admin" class="access-options">
+                  <option value="admin">Admin</option>
+                  <option value="admin">Viewer</option>
+                </select>
+                <hr class="edit-modal-bottom-line">
+              </li>
+              <li>
+                <h3 class="edit-modal-subtitle">Custom Access</h3>
+                <ul class="custom-access-list">
+                  <li>
+                    <input class="form-check-input" type="checkbox" value="" id="Lecture">
+                    <label class="form-check-label" for="Lecture">
+                      Lecture
+                    </label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" value="" id="Coupon">
+                    <label class="form-check-label" for="Coupon">
+                      Coupon
+                    </label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" value="" id="Message">
+                    <label class="form-check-label" for="Message">
+                      Message
+                    </label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" value="" id="Setting">
+                    <label class="form-check-label" for="Setting">
+                      Setting
+                    </label>
+                  </li>
+                  <li>
+                    <input class="form-check-input" type="checkbox" value="" id="TaskMenu">
+                    <label class="form-check-label" for="TaskMenu">
+                      Task Menu
+                    </label>
+                  </li>
+                </ul>
+                <hr class="edit-modal-bottom-line">
+              </li>
+              <li>
+                <h3 class="edit-modal-subtitle">Deactivate Account</h3>
+                <div class="warning">
+                  <span class="material-icons warning-icon">
+                    report_problem
+                  </span>
+                  <span class="warning-text">
+                    This cannot be undone!
+                  </span>
+                </div>
+                <button type="button" class="btn my-bg-btn my-btn-none deactivate-account-btn">
+                  Deactivate This Account
+                </button>
+              </li>
+            </ul>
+          </form>
         </div>
         <div class="modal-footer modal-form__footer">
           <button type="button" class="btn my-btn-outline-primary edit-modal__footer-btn"

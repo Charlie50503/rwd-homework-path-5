@@ -1,9 +1,27 @@
 @charset "UTF-8";
+body {
+  color: #121212;
+  font-size: 16px;
+  font-family: 'Lato'; }
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+p {
+  margin: 0; }
+
+code {
+  padding: 0 4px;
+  background-color: #edf4ee;
+  color: #2a8356; }
+
 .sidebar {
   position: relative;
   padding: 32px;
+  min-height: 100vh;
   width: 296px;
-  height: 100vh;
   background-color: #edf4ee;
   font-weight: bold;
   font-size: 16px;
@@ -53,10 +71,14 @@
       font-size: 24px; }
 
 .logo {
-  height: 40px; }
+  overflow: hidden;
+  height: 40px;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/085a62fb22df4bf21c605a180648c6c6e35c2b32/week5/logo-ANSWER.svg);
+  background-repeat: no-repeat;
+  text-indent: 101%;
+  white-space: nowrap; }
 
 .nav {
-  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
   width: 100%; }
@@ -66,13 +88,22 @@
     margin-bottom: auto;
     font-size: 24px;
     line-height: 33px; }
+  .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    padding: 0;
+    list-style: none; }
   .nav-search {
-    position: absolute;
-    right: 77px;
+    margin-right: 26px;
     cursor: pointer; }
   .nav-alam {
-    position: absolute;
-    right: 32px;
     cursor: pointer; }
 
 .feedback {
@@ -85,6 +116,7 @@
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
+    margin-top: 1rem;
     padding: 8px 12px;
     border: 1px solid #cdddcd;
     border-radius: 2px;
@@ -234,6 +266,9 @@
     padding-top: 4.5px;
     padding-bottom: 4.5px;
     border: none; }
+
+.material-icons:hover {
+  color: #2a8356; }
 
 .card-rectangle {
   display: -webkit-box;
@@ -446,7 +481,8 @@ main {
 
 .assignment-tasks {
   margin-right: 16px;
-  max-width: 320px; }
+  min-width: 320px;
+  width: 320px; }
   .assignment-tasks-item {
     padding: 12px; }
     .assignment-tasks-item__header {
@@ -640,23 +676,5 @@ main {
     font-weight: bold;
     font-size: 16px;
     line-height: 19px; }
-
-body {
-  color: #121212;
-  font-size: 16px;
-  font-family: 'Lato'; }
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto; }
-
-p {
-  margin: 0; }
-
-code {
-  padding: 0 4px;
-  background-color: #edf4ee;
-  color: #2a8356; }
 
 /*# sourceMappingURL=all.css.map */
