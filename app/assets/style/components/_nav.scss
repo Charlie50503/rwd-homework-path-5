@@ -1,5 +1,4 @@
 .nav {
-   position: relative;
    padding-top: 32px;
    padding-bottom: 32px;
    width: 100%;
@@ -12,15 +11,22 @@
       line-height: 33px;
    }
 
+   &-links {
+      display: flex;
+      justify-content: space-between;
+      margin-top: auto;
+      margin-bottom: auto;
+      margin-left: auto;
+      padding: 0;
+      list-style: none;
+   }
+
    &-search {
-      position: absolute;
-      right: 77px;
+      margin-right: 26px;
       cursor: pointer;
    }
 
    &-alam {
-      position: absolute;
-      right: 32px;
       cursor: pointer;
    }
 }

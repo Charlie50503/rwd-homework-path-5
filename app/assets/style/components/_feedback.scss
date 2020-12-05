@@ -9,6 +9,7 @@
 
    &-link {
       display: inline-flex;
+      margin-top: 1rem;
       padding: 8px 12px;
       border: 1px solid map-get($color, info);
       border-radius: 2px;

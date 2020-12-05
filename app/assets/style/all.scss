@@ -1,5 +1,7 @@
 @import './variables';
 
+@import './base/base';
+
 @import './components/sidebar';
 
 @import './components/logo';
@@ -18,6 +20,8 @@
 
 @import './components/table';
 
+@import './components/icons';
+
 @import './components/card';
 
 @import './components/tag';
@@ -33,25 +37,3 @@
 @import './pages/assignment';
 
 @import './pages/admin';
-
-body {
-   color: map-get($color, dark);
-   font-size: 16px;
-   font-family: 'Lato';
-}
-
-img {
-   display: block;
-   max-width: 100%;
-   height: auto;
-}
-
-p {
-   margin: 0;
-}
-
-code {
-   padding: 0 4px;
-   background-color: map-get($color, light);
-   color: map-get($color, primary);
-}
