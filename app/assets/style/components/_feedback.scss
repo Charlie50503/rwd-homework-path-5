@@ -34,19 +34,20 @@
    }
 
    &-list {
-      list-style: none;
+      // list-style: none;
+      list-style: url('../../images/circle-solid.svg');
 
       &__item {
          position: relative;
 
-         &::before {
-            position: absolute;
-            left: 0;
-            margin-left: -1em;
-            width: 1em;
-            color: black;
-            content: '•';
-         }
+         // &::before {
+         //    position: absolute;
+         //    left: 0;
+         //    margin-left: -1em;
+         //    width: 1em;
+         //    color: black;
+         //    content: '•';
+         // }
       }
    }
 }
