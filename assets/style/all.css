@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   color: #121212;
   font-size: 16px;
@@ -133,16 +132,9 @@ code {
       color: #121212;
       text-decoration: none; }
   .feedback-list {
-    list-style: none; }
+    list-style: url("../../images/circle-solid.svg"); }
     .feedback-list__item {
       position: relative; }
-      .feedback-list__item::before {
-        position: absolute;
-        left: 0;
-        margin-left: -1em;
-        width: 1em;
-        color: black;
-        content: '•'; }
 
 .my-dropdown {
   display: -webkit-box;
