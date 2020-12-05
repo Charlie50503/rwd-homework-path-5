@@ -65,6 +65,8 @@
    }
 
    .assignment-task {
+      min-width: 680px;
+
       &__header {
          display: flex;
          justify-content: space-between;
